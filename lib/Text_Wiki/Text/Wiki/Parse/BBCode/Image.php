@@ -90,11 +90,11 @@ class Text_Wiki_Parse_Image extends Text_Wiki_Parse {
      *     'src' => the URL / path to the image
      *     'attr' => empty for basic BBCode
      *
-     * @param array &$matches The array of matches from parse().
+     * @param array $matches The array of matches from parse().
      * @return string Delimited token representing the image
      * @access public
      */
-    function process(&$matches)
+    function process($matches)
     {
         // tokenize
         return $this->wiki->addToken($this->rule, array('src' => $matches[1], 'attr' => array()));
