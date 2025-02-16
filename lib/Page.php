@@ -337,9 +337,11 @@ class Wicked_Page
      *
      * This must be overridden if the page is to be anything like a real page.
      *
+     * @param string	content to be displayed
+     *
      * @throws Wicked_Exception
      */
-    public function display()
+    public function display($content)
     {
         global $injector;
 
