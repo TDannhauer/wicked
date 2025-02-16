@@ -60,12 +60,12 @@ class Text_Wiki_Parse_Colortext extends Text_Wiki_Parse {
      * - 'level' => the level of nesting (starting 0)
      * - 'color' => the color indicator
      *
-     * @param array &$matches The array of matches from parse().
+     * @param array $matches The array of matches from parse().
      * @return string Delimited by start/end tokens to be used as
      * placeholder in the source text surrounding the text to be colored.
      * @access public
      */
-    function process(&$matches)
+    function process($matches)
     {
         // nested block ?
         if (array_key_exists(2, $matches)) {
