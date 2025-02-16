@@ -61,7 +61,7 @@ class Text_Wiki_Parse_Italic extends Text_Wiki_Parse {
     * 
     * @access public
     *
-    * @param array &$matches The array of matches from parse().
+    * @param array $matches The array of matches from parse().
     *
     * @return string A pair of delimited tokens to be used as a
     * placeholder in the source text surrounding the text to be
@@ -69,7 +69,7 @@ class Text_Wiki_Parse_Italic extends Text_Wiki_Parse {
     *
     */
     
-    function process(&$matches)
+    function process($matches)
     {
         $start = $this->wiki->addToken(
             $this->rule, array('type' => 'start')
