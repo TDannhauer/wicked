@@ -133,12 +133,12 @@ class Text_Wiki_Parse_Table extends Text_Wiki_Parse {
      *
      * 'format' => table, row or cell optional styling ('xxx_start')
      *
-     * @param array &$matches The array of matches from parse().
+     * @param array $matches The array of matches from parse().
      * @return string the original text with tags replaced by delimited tokens
      * which point to the the token array containing their type and definition
      * @access public
      */
-    function process(&$matches)
+    function process($matches)
     {
         if (array_key_exists(4, $matches)) {
             $this->_level++;
