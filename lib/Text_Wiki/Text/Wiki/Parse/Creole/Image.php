@@ -44,13 +44,13 @@ class Text_Wiki_Parse_Image extends Text_Wiki_Parse {
      *
      * @access public
      *
-     * @param array &$matches The array of matches from parse().
+     * @param array $matches The array of matches from parse().
      *
      * @return string A token marking the horizontal rule.
      *
      */
 
-    function process(&$matches)
+    function process($matches)
     {
         $src = trim($matches[1]);
 		$src = ltrim($src, '/');
