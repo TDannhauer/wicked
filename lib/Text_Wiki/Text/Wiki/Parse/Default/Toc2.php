@@ -23,13 +23,13 @@ class Text_Wiki_Parse_Toc2 extends Text_Wiki_Parse_Toc
     *
     * @access public
     *
-    * @param array &$matches The array of matches from parse().
+    * @param array $matches The array of matches from parse().
     *
     * @return string A token indicating the TOC collection point.
     *
     */
 
-    public function process(&$matches)
+    public function process($matches)
     {
         $count = 0;
 

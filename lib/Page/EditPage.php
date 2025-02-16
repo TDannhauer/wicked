@@ -108,9 +108,11 @@ class Wicked_Page_EditPage extends Wicked_Page
     /**
      * Renders this page in display mode.
      *
+     * $param string content to display
+     *
      * @throws Wicked_Exception
      */
-    public function display()
+    public function display($content)
     {
         $GLOBALS['page_output']->addScriptFile('edit.js');
         $GLOBALS['injector']->getInstance('Horde_View_Topbar')->subinfo =
