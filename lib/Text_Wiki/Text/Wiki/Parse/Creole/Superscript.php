@@ -34,7 +34,7 @@ class Text_Wiki_Parse_Superscript extends Text_Wiki_Parse {
      *
      */
 
-    var $regex =  "/(\^\^(.*?)\^\^|(?<=\d)(st|nd|rd|th|er|e|re|ers|res|nds|de|des|ère|ème|ères|èmes|o|a)(?!\w))/";
+    var $regex =  "/(\^\^(.*?)\^\^|(?<=\d)(st|nd|rd|th|er|e|re|ers|res|nds|de|des|Ã¨re|Ã¨me|Ã¨res|Ã¨mes|o|a)(?!\w))/";
 
     /**
      *
@@ -45,7 +45,7 @@ class Text_Wiki_Parse_Superscript extends Text_Wiki_Parse {
      *
      * @access public
      *
-     * @param array &$matches The array of matches from parse().
+     * @param array $matches The array of matches from parse().
      *
      * @return string A pair of delimited tokens to be used as a
      * placeholder in the source text surrounding the text to be
@@ -53,7 +53,7 @@ class Text_Wiki_Parse_Superscript extends Text_Wiki_Parse {
      *
      */
 
-    function process(&$matches)
+    function process($matches)
     {
         if (! $this->wiki->checkInnerTags($matches[0])) {
             return $matches[0];
