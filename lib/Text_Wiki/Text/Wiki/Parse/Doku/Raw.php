@@ -48,20 +48,7 @@ class Text_Wiki_Parse_Raw extends Text_Wiki_Parse {
     
     var $regex = "/\n<nowiki>\n(.*?)\n<\/nowiki>\n/";
     
-    /**
-    * 
-    * Generates a token entry for the matched text.  Token options are:
-    * 
-    * 'text' => The full matched text.
-    * 
-    * @access public
-    *
-    * @param array &$matches The array of matches from parse().
-    *
-    * @return A delimited token number to be used as a placeholder in
-    * the source text.
-    *
-    */
+
 
     function parse() {
         $this->wiki->source = preg_replace_callback(
@@ -77,8 +64,23 @@ class Text_Wiki_Parse_Raw extends Text_Wiki_Parse {
         );
 
     }
+
+    /**
+    * 
+    * Generates a token entry for the matched text.  Token options are:
+    * 
+    * 'text' => The full matched text.
+    * 
+    * @access public
+    *
+    * @param array $matches The array of matches from parse().
+    *
+    * @return A delimited token number to be used as a placeholder in
+    * the source text.
+    *
+    */
     
-    function process(&$matches)
+    function process($matches)
     {
         $options = array('text' => $matches[1]);
         return "\n".$this->wiki->addToken($this->rule, $options)."\n";
