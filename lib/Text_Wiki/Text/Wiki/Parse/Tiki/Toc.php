@@ -68,13 +68,13 @@ class Text_Wiki_Parse_Toc extends Text_Wiki_Parse {
     * 
     * @access public
     *
-    * @param array &$matches The array of matches from parse().
+    * @param array $matches The array of matches from parse().
     *
     * @return string A token indicating the TOC collection point.
     *
     */
     
-    function process(&$matches)
+    function process($matches)
     {
         return $this->wiki->addToken($this->rule);
     }

@@ -126,11 +126,11 @@ class Text_Wiki_Parse_Url extends Text_Wiki_Parse {
      *     'href' => the URL link href portion
      *     'text' => the displayed text of the URL link
      *
-     * @param array &$matches The array of matches from parse().
+     * @param array $matches The array of matches from parse().
      * @return string Delimited token representing the url
      * @access public
      */
-    function process(&$matches)
+    function process($matches)
     {
         if ($this->refused && isset($matches[3]) && in_array($matches[3], $this->refused)) {
             return $matches[0];

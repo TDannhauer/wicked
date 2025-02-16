@@ -174,14 +174,14 @@ class Text_Wiki_Parse_Wikilink extends Text_Wiki_Parse {
     *
     * @access public
     *
-    * @param array &$matches The array of matches from parse().
+    * @param array $matches The array of matches from parse().
     *
     * @return A delimited token to be used as a placeholder in
     * the source text, plus any text prior to the match.
     *
     */
 
-    function process(&$matches)
+    function process($matches)
     {
         // when prefixed with !, it's explicitly not a wiki link.
         // return everything as it was.

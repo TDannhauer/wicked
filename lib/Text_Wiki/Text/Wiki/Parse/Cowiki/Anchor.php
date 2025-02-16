@@ -59,14 +59,14 @@ class Text_Wiki_Parse_Anchor extends Text_Wiki_Parse {
     * 
     * @access public
     *
-    * @param array &$matches The array of matches from parse().
+    * @param array $matches The array of matches from parse().
     *
     * @return A delimited token number to be used as a placeholder in
     * the source text.
     *
     */
     
-    function process(&$matches) {
+    function process($matches) {
     
         $name = $matches[2];
         $text = $matches[3];

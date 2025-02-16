@@ -33,7 +33,7 @@ class Text_Wiki_Parse_Function extends Text_Wiki_Parse {
 
     var $regex = '/^(\<function\>)\n(.+)\n(\<\/function\>)(\s|$)/Umsi';
     
-    function process(&$matches)
+    function process($matches)
     {
         // default options
         $opts = array(
