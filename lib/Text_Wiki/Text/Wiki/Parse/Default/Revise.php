@@ -72,14 +72,14 @@ class Text_Wiki_Parse_Revise extends Text_Wiki_Parse {
     * 
     * @access public
     *
-    * @param array &$matches The array of matches from parse().
+    * @param array $matches The array of matches from parse().
     *
     * @return string A pair of delimited tokens to be used as a
     * placeholder in the source text surrounding the teletype text.
     *
     */
     
-    function process(&$matches)
+    function process($matches)
     {
         $output = '';
         $src = $matches[1];
