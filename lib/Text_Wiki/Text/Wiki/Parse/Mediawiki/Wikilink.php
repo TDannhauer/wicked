@@ -145,10 +145,10 @@ class Text_Wiki_Parse_Wikilink extends Text_Wiki_Parse {
      * - 'text' => the optional alternate link text
      *
      * @access public
-     * @param array &$matches The array of matches from parse().
+     * @param array $matches The array of matches from parse().
      * @return string token to be used as replacement
      */
-    function process(&$matches)
+    function process($matches)
     {
         // Starting colon ?
         $colon = !empty($matches[1]);
