@@ -175,7 +175,7 @@ class Text_Wiki_Parse {
     *
     */
 
-    function process(&$matches)
+    function process($matches)
     {
         return $matches[0];
     }
