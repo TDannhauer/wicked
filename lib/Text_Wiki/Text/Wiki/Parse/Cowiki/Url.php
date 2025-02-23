@@ -226,7 +226,7 @@ class Text_Wiki_Parse_Url extends Text_Wiki_Parse {
     *
     */
 
-    function processFootnote(&$matches)
+    function processFootnote($matches)
     {
         // keep a running count for footnotes
         $this->footnoteCount++;
@@ -263,7 +263,7 @@ class Text_Wiki_Parse_Url extends Text_Wiki_Parse {
     *
     */
 
-    function processDescr(&$matches)
+    function processDescr($matches)
     {
         // set options
         $options = array(
