@@ -72,9 +72,10 @@ class Wicked_Page_DeletePage extends Wicked_Page
     /**
      * Render this page in Display mode.
      *
+     * $param string $content    The content to be displayed
      * @throws Wicked_Exception
      */
-    public function display()
+    public function display($content)
     {
         $version = Horde_Util::getFormData('version');
         $page = Wicked_Page::getPage($this->referrer(), $version);
