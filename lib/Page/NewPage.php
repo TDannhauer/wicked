@@ -86,9 +86,12 @@ class Wicked_Page_NewPage extends Wicked_Page
     /**
      * Renders this page in display mode.
      *
+     *
+     * @param string $content
+     *
      * @throws Wicked_Exception
      */
-    public function display()
+    public function display($content)
     {
         $GLOBALS['page_output']->addScriptFile('edit.js');
 
