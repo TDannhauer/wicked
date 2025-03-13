@@ -69,9 +69,11 @@ class Wicked_Page_AddPage extends Wicked_Page
     /**
      * Renders this page in display mode.
      *
+     * @param string $content
+     *
      * @throws Wicked_Exception
      */
-    public function display()
+    public function display($content)
     {
         global $injector, $page_output, $wicked;
 
